@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "../projectCard/ProjectCard.jsx";
-import projImg1 from "../../assets/img/toa.png";
-import projImg2 from "../../assets/img/project-img2.png";
-import projImg3 from "../../assets/img/project-img1.png";
+import projImg1 from "../../assets/img/FireShot Capture 061 - The Organic Awakens - [theorganicawakens.netlify.app].png";
+import projImg2 from "../../assets/img/FireShot Capture 059 - Coffee Shop - Home - [beanscoffeeshop.netlify.app].png";
+import projImg3 from "../../assets/img/FireShot Capture 060 - The Bees Knees - [thebeeskneesbandsite.netlify.app].png";
+import projImg4 from "../../assets/img/FireShot Capture 036 - BrainFlix - [brainflixbf.netlify.app].png";
+import projImg5 from "../../assets/img/FireShot Capture 048 - InStock - [localhost].png";
+import projImg6 from "../../assets/img/FireShot Capture 062 - Memory Game - [memorygamelucky.netlify.app].png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -15,37 +18,37 @@ export default function Projects() {
       title: "The Organic Awakens",
       description: "Capstone project for BrainStation's Sofwtare Engineering Bootcamp",
       imgUrl: projImg1,
+      link: "https://theorganicawakens.netlify.app/",
     },
     {
       title: "Coffee Shop",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg2,
+      link: "https://beanscoffeeshop.netlify.app/",
     },
     {
       title: "The Bees Knees BandSite",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg3,
+      link: "https://thebeeskneesbandsite.netlify.app/",
     },
     {
       title: "BrainFlix",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg4,
+      link: "https://brainflixbf.netlify.app/",
     },
     {
       title: "InStock",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg5,
+      link: "https://memorygamelucky.netlify.app/",
     },
     {
       title: "Memory Game",
       description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Coffee Shop",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+      imgUrl: projImg6,link: "https://memorygamelucky.netlify.app/",
+    }
   ];
 
   return (
