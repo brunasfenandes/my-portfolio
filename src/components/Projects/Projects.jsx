@@ -1,42 +1,48 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "../projectCard/ProjectCard.jsx";
-import projImg1 from "../../assets/img/project-img1.png";
+import projImg1 from "../../assets/img/toa.png";
 import projImg2 from "../../assets/img/project-img2.png";
-import projImg3 from "../../assets/img/project-img3.png";
+import projImg3 from "../../assets/img/project-img1.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import './Projects.scss';
 
 export default function Projects() {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "The Organic Awakens",
+      description: "Capstone project for BrainStation's Sofwtare Engineering Bootcamp",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
+      title: "Coffee Shop",
       description: "Design & Development",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
+      title: "The Bees Knees BandSite",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "BrainFlix",
+      description: "Design & Development",
+      imgUrl: projImg3,
+    },
+    {
+      title: "InStock",
+      description: "Design & Development",
+      imgUrl: projImg1,
+    },
+    {
+      title: "Memory Game",
+      description: "Design & Development",
+      imgUrl: projImg2,
+    },
+    {
+      title: "Coffee Shop",
       description: "Design & Development",
       imgUrl: projImg3,
     },
@@ -51,7 +57,7 @@ export default function Projects() {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Throughout my career, I’ve had the opportunity to work on a wide range of projects that demonstrate my expertise in web development, database management, and user interface design. From building responsive web applications with React to creating dynamic APIs and managing databases, each project has helped me refine my technical and problem-solving skills. Below are some of the highlights of my work.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
