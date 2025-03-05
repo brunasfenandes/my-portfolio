@@ -63,7 +63,7 @@ export default function Banner() {
                   I specialize in building dynamic, user-friendly applications using modern frameworks and tools.  
                   With an eye for design and a love for problem-solving, I create seamless digital experiences from front to back.  
                   Let's build something amazing together!</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
