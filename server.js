@@ -1,6 +1,8 @@
-const express = require("express");
+import express from 'express';
 const router = express.Router();
 const cors = require("cors");
+import "dotenv/config";
+import cors from "cors";
 const nodemailer = require("nodemailer");
 
 // server used to send send emails
@@ -13,11 +15,14 @@ console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
-  service: 'outlook',
+  service: 'Outlook365',
   auth: {
-    user: "********@gmail.com",
-    pass: ""
+    user: "process.env.EMAIL_USER",
+    pass: "process.env.EMAIL_PASS"
   },
+  tls: {
+    rejectUnauthorized: false
+  }
 });
 
 contactEmail.verify((error) => {

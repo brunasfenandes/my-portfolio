@@ -7,9 +7,7 @@ import navIcon2 from '../../assets/icons/nav-icon2.svg';
 import navIcon3 from '../../assets/icons/nav-icon3.svg';
 import navIcon4 from '../../assets/icons/nav-ico4.svg';
 import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 
 export default function NavBar() {
 
@@ -60,8 +58,6 @@ export default function NavBar() {
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
-
-              {/* <div id="google_translate_element"></div> */}
             </span>
           </Navbar.Collapse>
         </Container>
