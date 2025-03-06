@@ -1,5 +1,4 @@
 import './App.scss';
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from './components/Banner/Banner';
 import Contact from './components/Contact/Contact';

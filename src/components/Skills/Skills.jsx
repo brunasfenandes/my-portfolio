@@ -3,10 +3,11 @@ import meter2 from "../../assets/img/meter2.svg";
 import meter3 from "../../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../../assets/img/arrow1.svg";
-import arrow2 from "../../assets/img/arrow2.svg";
+import arrow1 from "../../assets/icons/arrow1.svg";
+import arrow2 from "../../assets/icons/arrow2.svg";
 import colorSharp from "../../assets/img/color-sharp.png"
 import './Skills.scss';
+import Tech from "../Tech/Tech";
 
 
 export default function Skills() {
@@ -35,39 +36,41 @@ export default function Skills() {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>With experience in both front-end and back-end development, I have built applications using a variety of technologies. My skills include creating responsive, user-friendly websites, managing databases, and building scalable APIs.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Database Management</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>UI/UX Design</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>API Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Data Analysis</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Team Collaboration</h5>
-                            </div>
-                        </Carousel>
+                      <h2>Skills</h2>
+                      <p>With experience in both front-end and back-end development, I have built applications using a variety of technologies. My skills include creating responsive, user-friendly websites, managing databases, and building scalable APIs.</p>
+                      <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                          <div className="item">
+                              <img src={meter1} alt="Image" />
+                              <h5>Web Development</h5>
+                          </div>
+                          <div className="item">
+                              <img src={meter2} alt="Image" />
+                              <h5>Database Management</h5>
+                          </div>
+                          <div className="item">
+                              <img src={meter3} alt="Image" />
+                              <h5>UI/UX Design</h5>
+                          </div>
+                          <div className="item">
+                              <img src={meter1} alt="Image" />
+                              <h5>API Development</h5>
+                          </div>
+                          <div className="item">
+                              <img src={meter1} alt="Image" />
+                              <h5>Data Analysis</h5>
+                          </div>
+                          <div className="item">
+                              <img src={meter1} alt="Image" />
+                              <h5>Team Collaboration</h5>
+                          </div>
+                      </Carousel>
                     </div>
+
+                    <Tech />
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
     </section>
   )
 }

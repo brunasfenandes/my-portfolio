@@ -1,0 +1,30 @@
+@use '../../styles/global' as *;
+
+.tools-ctn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.125rem;
+  margin: 5rem 1rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    // padding: 1.5rem 0;
+  }
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
+
+  &__name {
+    text-align: center;
+  }
+}

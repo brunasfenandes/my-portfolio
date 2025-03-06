@@ -1,12 +1,19 @@
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-image: url('../../assets/img/color-sharp.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   h2 {
     font-size: 45px;
     font-weight: 700;
     text-align: center;
+  }
+
+  a {
+    color: #ffffff;
   }
 
   p {
@@ -17,6 +24,7 @@
     margin: 14px auto 30px auto;
     text-align: center;
     width: 56%;
+    padding: 1rem;
   }
 
   .nav.nav-pills {
