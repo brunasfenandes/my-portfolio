@@ -32,45 +32,44 @@ export default function Skills() {
 
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                      <h2>Skills</h2>
-                      <p>With experience in both front-end and back-end development, I have built applications using a variety of technologies. My skills include creating responsive, user-friendly websites, managing databases, and building scalable APIs.</p>
-                      <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                          <div className="item">
-                              <img src={meter1} alt="Image" />
-                              <h5>Web Development</h5>
-                          </div>
-                          <div className="item">
-                              <img src={meter2} alt="Image" />
-                              <h5>Database Management</h5>
-                          </div>
-                          <div className="item">
-                              <img src={meter3} alt="Image" />
-                              <h5>UI/UX Design</h5>
-                          </div>
-                          <div className="item">
-                              <img src={meter1} alt="Image" />
-                              <h5>API Development</h5>
-                          </div>
-                          <div className="item">
-                              <img src={meter1} alt="Image" />
-                              <h5>Data Analysis</h5>
-                          </div>
-                          <div className="item">
-                              <img src={meter1} alt="Image" />
-                              <h5>Team Collaboration</h5>
-                          </div>
-                      </Carousel>
-                    </div>
+      <div className="container">
+          <div className="row">
+              <div className="col-12">
+                  <div className="skill-bx wow zoomIn">
+                    <h2>Skills</h2>
+                    <p>With experience in both front-end and back-end development, I have built applications using a variety of technologies. My skills include creating responsive, user-friendly websites, managing databases, and building scalable APIs.</p>
+                    <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <div className="item">
+                            <img src={meter1} alt="Image" />
+                            <h5>Web Development</h5>
+                        </div>
+                        <div className="item">
+                            <img src={meter2} alt="Image" />
+                            <h5>Database Management</h5>
+                        </div>
+                        <div className="item">
+                            <img src={meter3} alt="Image" />
+                            <h5>UI/UX Design</h5>
+                        </div>
+                        <div className="item">
+                            <img src={meter1} alt="Image" />
+                            <h5>API Development</h5>
+                        </div>
+                        <div className="item">
+                            <img src={meter1} alt="Image" />
+                            <h5>Data Analysis</h5>
+                        </div>
+                        <div className="item">
+                            <img src={meter1} alt="Image" />
+                            <h5>Team Collaboration</h5>
+                        </div>
+                    </Carousel>
+                  </div>
 
-                    <Tech />
-                </div>
-            </div>
-        </div>
-        {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
+                  <Tech />
+              </div>
+          </div>
+      </div>
     </section>
   )
 }

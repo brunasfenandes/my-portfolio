@@ -1,4 +1,4 @@
-import javascript from '../../assets/logo/javascript.png';
+import javascript from '../../assets/img/javascript.png';
 import typescript from '../../assets/logo/typescript.png';
 import html from '../../assets/logo/html.png';
 import css from '../../assets/logo/css.png';
