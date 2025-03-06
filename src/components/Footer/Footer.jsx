@@ -20,8 +20,8 @@ export default function Footer() {
             <div className="footer-socials">
               <a href="https://www.linkedin.com/in/brunasfenandes/" target="_blank"><img src={navIcon1} alt="LinkedIn Icon" /></a>
               <a href="https://github.com/brunasfenandes/" target="_blank"><img src={navIcon2} alt="GitHub Icon" /></a>
-              <a href="https://www.instagram.com/brunafenandes/" target="_blank"><img src={navIcon3} alt="Instagram Icon" /></a>
-              <a href="https://x.com/brunasfenandess" target="_blank"><img src={navIcon4} alt="Twitter Icon" /></a>
+              <a href="https://www.instagram.com/brunasfenandes/" target="_blank"><img src={navIcon3} alt="Instagram Icon" /></a>
+              <a href="https://x.com/brunasfenandes" target="_blank"><img src={navIcon4} alt="Twitter Icon" /></a>
             </div>
             <p>Copyright 2025. All Rights Reserved</p>
           </Col>

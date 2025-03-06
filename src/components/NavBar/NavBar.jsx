@@ -52,8 +52,8 @@ export default function NavBar() {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/brunasfenandes/" target="_blank"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/brunasfenandes/" target="_blank"><img src={navIcon2} alt="GitHub Icon" /></a>
-                <a href="https://www.instagram.com/brunafenandes/" target="_blank"><img src={navIcon3} alt="Instagram Icon" /></a>
-                <a href="https://x.com/brunasfenandess" target="_blank"><img src={navIcon4} alt="Twitter Icon" /></a>
+                <a href="https://www.instagram.com/brunasfenandes/" target="_blank"><img src={navIcon3} alt="Instagram Icon" /></a>
+                <a href="https://x.com/brunasfenandes" target="_blank"><img src={navIcon4} alt="Twitter Icon" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
