@@ -58,12 +58,19 @@ export default function Banner() {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Bruna`} <br/> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer", "Web Designer", "UI/UX Enthusiast" ]'><span className="wrap">{text}</span></span></h1>
+
+                <div className="greeting">
+                  <h1>{`Hi! I'm Bruna`} <br/> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer", "Web Designer", "UI/UX Enthusiast" ]'><span className="wrap">{text}</span></span></h1>
+                </div>
+
+                <div className="profile">
                   <p>I'm a passionate Full Stack Developer with a background in chemistry and a strong foundation in web technologies.  
                   I specialize in building dynamic, user-friendly applications using modern frameworks and tools.  
                   With an eye for design and a love for problem-solving, I create seamless digital experiences from front to back.  
                   Let's build something amazing together!</p>
-                  <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
+                </div>
+
+                <button>Let's Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
