@@ -9,6 +9,24 @@ import projImg6 from "../../assets/img/FireShot Capture 062 - Memory Game - [mem
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
+import javascript from '../../assets/img/javascript.png';
+import typescript from '../../assets/logo/typescript.png';
+import html from '../../assets/logo/html.png';
+import css from '../../assets/logo/css.png';
+import reactjs from '../../assets/logo/reactjs.png';
+import sass from '../../assets/logo/sass.png';
+import tailwind from '../../assets/logo/tailwind.png';
+import nodejs from '../../assets/logo/nodejs.png';
+import mysql from '../../assets/logo/mysql.png';
+import threejs from '../../assets/logo/threejs.svg';
+import git from '../../assets/logo/git.png';
+import figma from '../../assets/logo/figma.png';
+import bootstrap from '../../assets/logo/bootstrap.svg.png';
+import nextjs from '../../assets/logo/nextjs.svg';
+import materialui from '../../assets/logo/materialui.svg';
+import knexjs from '../../assets/logo/knexjs.png';
+
 import './Projects.scss';
 
 export default function Projects() {
@@ -19,7 +37,7 @@ export default function Projects() {
       description: "Capstone project for BrainStation's Sofwtare Engineering Bootcamp",
       imgUrl: projImg1,
       link: "https://theorganicawakens.netlify.app/",
-      tools: ["React", "Express", "MySQL", "Three.js", "SCSS"],
+      tools: [reactjs, nodejs, javascript, mysql, threejs, figma],
       challenges: "Integrating a 3D molecule viewer with React and dynamically rendering molecules from JSON.",
     },
     {
@@ -27,7 +45,7 @@ export default function Projects() {
       description: "A modern and responsive landing page for a fictional coffee shop, showcasing an intuitive menu, store locations, and a sleek, inviting design.",
       imgUrl: projImg2,
       link: "https://beanscoffeeshop.netlify.app/",
-      tools: ["HTML", "CSS", "SCSS"],
+      tools: [html, css, sass],
       challenges: "Ensuring mobile responsiveness and smooth user interactions.", 
     },
     {
@@ -35,7 +53,7 @@ export default function Projects() {
       description: "A website for a fictional band that allows users to explore music, watch videos, and stay updated on upcoming events and news.",
       imgUrl: projImg3,
       link: "https://thebeeskneesbandsite.netlify.app/",
-      tools: ["HTML", "CSS", "JavaScript", "React", "APIs", "SCSS"],
+      tools: [html, css, javascript, reactjs, sass],
       challenges: "Managing audio file integration and optimizing site performance for media-heavy content."
     },
     {
@@ -43,7 +61,7 @@ export default function Projects() {
       description: "A YouTube-inspired video streaming platform where users can browse, upload, and interact with video content.",
       imgUrl: projImg4,
       link: "https://brainflixbf.netlify.app/",
-      tools: ["React", "Express", "Node.js", "Toastify", "SCSS"],
+      tools: [reactjs, nodejs, javascript, sass],
       challenges: "Building a full-stack video upload feature and implementing backend video metadata storage."
     },
     {
@@ -51,14 +69,14 @@ export default function Projects() {
       description: "A warehouse and inventory management system that enables businesses to track product stock levels, warehouse locations, and order statuses in real time.",
       imgUrl: projImg5,
       link: "https://memorygamelucky.netlify.app/",
-      tools: ["React", "Express", "MySQL", "JavaScript", "SCSS"],
+      tools: [reactjs, nodejs, mysql, javascript, sass],
       challenges: "Working on a Agile team with GitFlow, dividing tickets and ensuring everyone had a fair amount of work."
     },
     {
       title: "Memory Game",
       description: "A fun and interactive memory-matching game where players test their ability to remember card positions while facing different levels of challenges.",
       imgUrl: projImg6,link: "https://memorygamelucky.netlify.app/",
-      tools: ["HTML", "CSS", "JavaScript"],
+      tools: [html, css, javascript, sass],
       challenges: "Integrating an external API with restrict number of requests per hour during the coding and testing process."
     }
   ];
@@ -105,22 +123,24 @@ export default function Projects() {
                     <Tab.Pane eventKey="second">
                       <Row>
                         {projects.map((project, index) => (
-                          <Col key={index} md={6}>
+                          <Col key={index} size={12} sm={6} md={4}>
                             <h5>{project.title}</h5>
-                            <ul>
+                            <ul className="tools">
                               {project.tools.map((tool, idx) => (
-                                <li key={idx}>{tool}</li>
+                                <li key={idx} className="tools__item">
+                                  <img src={tool} alt={`Logo ${idx}`}/>
+                                </li>
                               ))}
                             </ul>
                           </Col>
                         ))}
                       </Row>
                     </Tab.Pane>
-
+                    
                     <Tab.Pane eventKey="third">
                       <Row>
                         {projects.map((project, index) => (
-                          <Col key={index} md={6}>
+                          <Col key={index} md={6} className="challenges">
                             <h5>{project.title}</h5>
                             <p><strong>Challenge:</strong> {project.challenges}</p>
                           </Col>

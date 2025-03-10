@@ -149,3 +149,24 @@
     z-index: -4;
   }
 }
+
+.challenges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+}
+
+.tools {
+  display: flex;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  // max-width: 20rem;
+
+  &__item {
+    width: 3.125rem;
+    height: 3.125rem;
+    list-style: none;
+    margin-right: 1rem;
+  }
+}
