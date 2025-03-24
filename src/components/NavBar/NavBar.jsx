@@ -6,10 +6,7 @@ import navIcon1 from '../../assets/icons/nav-icon1.svg';
 import navIcon2 from '../../assets/icons/nav-icon2.svg';
 import navIcon3 from '../../assets/icons/nav-icon3.svg';
 import navIcon4 from '../../assets/icons/nav-ico4.svg';
-import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router} from "react-router-dom";
-import { createPortal } from 'react-dom';
-import ResumeModal from '../ResumeModal/ResumeModal';
 
 export default function NavBar() {
 
@@ -80,7 +77,7 @@ export default function NavBar() {
         {/* <Modal.Header closeButton>
           <Modal.Title>My Resume</Modal.Title>
         </Modal.Header> */}
-        
+
         <Modal.Body>
           <iframe
             src="/Bruna_Silva_Fernandes_Resume_Software_Developer.pdf"
