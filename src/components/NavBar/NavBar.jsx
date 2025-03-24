@@ -10,7 +10,6 @@ import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router} from "react-router-dom";
 
 export default function NavBar() {
-
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -55,9 +54,10 @@ export default function NavBar() {
                 <a href="https://www.instagram.com/brunasfenandes/" target="_blank"><img src={navIcon3} alt="Instagram Icon" /></a>
                 <a href="https://x.com/brunasfenandes" target="_blank"><img src={navIcon4} alt="Twitter Icon" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+
+              <a href="https://drive.google.com/file/d/1McxEYBrFRUdVZn-TYSInnZG8zQCEz0yo/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <button className="vvd"><span>My Resume</span></button>
+              </a>
             </span>
           </Navbar.Collapse>
         </Container>
