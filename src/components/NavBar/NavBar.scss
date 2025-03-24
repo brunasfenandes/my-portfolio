@@ -35,6 +35,7 @@ nav.navbar {
     align-items: center;
     padding: 1rem 0;
     gap: 5px;
+    position: relative;
 
     button {
       font-weight: 700;
@@ -180,21 +181,61 @@ nav.navbar {
   }
 }
 
-// .goog-te-gadget-simple {
-//   position: relative;
-//   padding: 5px 15px;
-//   font-size: 16px;
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 50%;
-//   // background-color: transparent;
-//   border: 2px solid #ccc;
-//   outline: none;
-//   border-color: none; 
-//   background-image: url('../../assets/img/language-svgrepo-com.svg');
-//   background-position: top;
+.modal {
+  height: 90vh !important;
+  z-index: 10000;
+}
 
-//   & :hover {
-//     background-color: #f0f0f0;
-//   }
-// }
+.modal-body {
+  height: inherit;
+  padding: 1rem;
+}
+
+.responsive-modal,
+.modal-dialog {
+  display: flex !important; 
+  justify-content: center !important; 
+  align-items: center !important;
+  margin: 0 auto !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.modal-content {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+}
+
+.modal-header {
+  background: #121212;
+  color: #fff;
+  border-bottom: none;
+}
+
+.modal-footer {
+  background: #f1f1f1;
+}
+
+@media (min-width: 300px) {
+  .modal-dialog {
+    width: 100% !important; 
+  }
+}
+
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    width: 100% !important; 
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    width: 100% !important;
+  }
+}
