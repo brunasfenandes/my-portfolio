@@ -1,6 +1,6 @@
 import './NavBar.scss';
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button, Modal } from "react-bootstrap";
 import logo from '../../assets/logo/graphic (3).svg';
 import navIcon1 from '../../assets/icons/nav-icon1.svg';
 import navIcon2 from '../../assets/icons/nav-icon2.svg';
@@ -8,10 +8,16 @@ import navIcon3 from '../../assets/icons/nav-icon3.svg';
 import navIcon4 from '../../assets/icons/nav-ico4.svg';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router} from "react-router-dom";
+import { createPortal } from 'react-dom';
+import ResumeModal from '../ResumeModal/ResumeModal';
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     const onScroll = () => {
@@ -55,13 +61,42 @@ export default function NavBar() {
                 <a href="https://x.com/brunasfenandes" target="_blank"><img src={navIcon4} alt="Twitter Icon" /></a>
               </div>
 
-              <a href="https://drive.google.com/file/d/1McxEYBrFRUdVZn-TYSInnZG8zQCEz0yo/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <button className="vvd"><span>My Resume</span></button>
-              </a>
+              <Button className="vvd" onClick={handleShow}>
+                <span>My Resume</span>
+              </Button>
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <Modal 
+        show={show} 
+        onHide={handleClose} 
+        size="lg" 
+        centered
+        className="responsive-modal"
+      >
+        {/* <Modal.Header closeButton>
+          <Modal.Title>My Resume</Modal.Title>
+        </Modal.Header> */}
+        {/* <Modal.Body>
+          
+        </Modal.Body> */}
+
+        <iframe
+            src="/Bruna_Silva_Fernandes_Resume_Software_Developer.pdf"
+            title="Resume"
+            style={{ width: "100%", height: "70vh", border: "none" }}
+          />
+        <Modal.Footer>
+          <Button 
+            variant="secondary" 
+            onClick={handleClose}
+          >
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Router>
   )
 }
