@@ -80,15 +80,16 @@ export default function NavBar() {
         {/* <Modal.Header closeButton>
           <Modal.Title>My Resume</Modal.Title>
         </Modal.Header> */}
-        {/* <Modal.Body>
-          
-        </Modal.Body> */}
-
-        <iframe
+        
+        <Modal.Body>
+          <iframe
             src="/Bruna_Silva_Fernandes_Resume_Software_Developer.pdf"
             title="Resume"
             style={{ width: "100%", height: "70vh", border: "none" }}
           />
+        </Modal.Body>
+
+        
         <Modal.Footer>
           <Button 
             variant="secondary" 
